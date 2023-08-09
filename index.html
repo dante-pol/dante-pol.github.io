@@ -28,10 +28,11 @@
           </span>
         </a>
         <!-- nav>ul>li*2>a -->
+        <button id="toggle-theme">Toggle theme</button>
         <nav>
           <ul>
             <li><a href="">GitHub</a></li>
-            <li><a href="">Sign in</a></li>
+            <li><a id="sign-in-btn" href="">Sign in</a></li>
           </ul>
         </nav>
       </header>
@@ -148,13 +149,17 @@
     </div>
   </footer>
   <div class="modal">
+    <!-- <div class="back"></div> -->
     <form class="login-form">
+      <div class="close-modal-btn"></div>
       <h2>Login</h2>
       <input type="text" name="email" placeholder="Email">
       <input type="password" name="password" placeholder="Password">
       <button type="submit" class="btn-login">Login</button>
     </form>
   </div>
+  <!-- script:src -->
+  <script src="script.js"></script>
 </body>
 
 </html>
