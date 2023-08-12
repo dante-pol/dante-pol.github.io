@@ -370,6 +370,33 @@ footer nav {
   margin-top: 0;
 }
 
+.dark .check {
+  transform: translate(18px);
+}
+
+.check {
+  transition: all 0.25s;
+}
+
+.sun, .moon {
+  position: absolute;
+}
+
+.dark .sun {
+  opacity: 0;
+}
+
+.dark .moon {
+  opacity: 1;
+}
+
+.sun {
+  opacity: 1;
+}
+
+.moon {
+  opacity: 0;
+}
 /* >=640px */
 @media (min-width: 640px) {
   .description__feature-text, .description__feature-img {
