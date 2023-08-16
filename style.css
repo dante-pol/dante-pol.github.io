@@ -317,7 +317,7 @@ footer nav {
 }
 
 .close-modal-btn:hover {
-  --back-color: var(--text-gray-900);
+  --back-color: rgb(60, 60, 60);
 }
 
 /* .close-modal-btn:hover::before, .close-modal-btn:hover::after {
@@ -364,22 +364,35 @@ footer nav {
 }
 
 .login-form h2 {
-  color: var(--text-gray-900);
+  color: rgb(46, 46, 46);
   text-align: center;
   font-size: 2rem;
   margin-top: 0;
 }
 
+#toggle-theme {
+  width: 50px;
+  padding: 2px;
+  border: 2px solid black;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
 .dark .check {
-  transform: translate(18px);
+  transform: translate(20px);
 }
 
 .check {
   transition: all 0.25s;
+  position: relative;
+  height: 24px;
+  width: 24px;
 }
 
 .sun, .moon {
   position: absolute;
+  inset: 0;
+  transition: all 0.25s;
 }
 
 .dark .sun {
@@ -397,6 +410,7 @@ footer nav {
 .moon {
   opacity: 0;
 }
+
 /* >=640px */
 @media (min-width: 640px) {
   .description__feature-text, .description__feature-img {
